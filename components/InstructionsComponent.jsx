@@ -3,7 +3,7 @@ import Router, { useRouter } from "next/router";
 import getConfig from "next/config";
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
-const defaultLanguage = 'en';
+const defaultLanguage = publicRuntimeConfig.defaultLanguage;
 
 function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
@@ -17,7 +17,7 @@ function InstructionsComponent({userLanguage}) {
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
 	switch (lang) {
-		case "zh":
+		case "zh", "zh-CN":
 			studioIntro = "为披萨玩家开发更多更好的App";
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
