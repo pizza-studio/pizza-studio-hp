@@ -9,15 +9,12 @@ function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
 	var lang = router.locale || userLanguage;
-	if (lang) {
-		lang = lang.substr(0, 2);
-	}
 	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
 	switch (lang) {
-		case "zh", "zh-CN":
+		case "zh":
 			studioIntro = "为披萨玩家开发更多更好的App";
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
@@ -102,7 +99,7 @@ function InstructionsComponent({userLanguage}) {
 						</a>
 					</div>
 				</div>
-				Copyright © 2022-2023 Pizza Studio {lang}
+				Copyright © 2022-2023 Pizza Studio
 			</div>
 		</div>
 	);
