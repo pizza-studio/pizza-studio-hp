@@ -6,10 +6,10 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					Pizza<span>Studio</span>
+					Pizza <span>Studio</span>
 				</h1>
 				<p>
-					Developers for Otaku games{" "}
+					Developers of Pizza Helpers & More Great Apps{" "}
 				</p>
 			</header>
 
