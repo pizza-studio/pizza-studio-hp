@@ -73,6 +73,7 @@ export default function InstructionsComponent() {
 						</a>
 					</div>
 				</div>
+				Copyright © 2022-2023 Pizza Studio
 			</div>
 		</div>
 	);
