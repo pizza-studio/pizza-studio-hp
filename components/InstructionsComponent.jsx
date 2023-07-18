@@ -5,7 +5,7 @@ import getConfig from "next/config";
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 const defaultLanguage = 'en';
 
-export default function InstructionsComponent({userLanguage}) {
+function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
 	var lang = userLanguage;
@@ -38,7 +38,7 @@ export default function InstructionsComponent({userLanguage}) {
 					Pizza <span>Studio</span>
 				</h1>
 				<p>
-					( {studioIntro})
+					{studioIntro}
 				</p>
 			</header>
 
@@ -49,7 +49,7 @@ export default function InstructionsComponent({userLanguage}) {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>({ophelperName})</p>
+						<p>{ophelperName}</p>
 					</div>
 				</a>
 				<a
@@ -58,7 +58,7 @@ export default function InstructionsComponent({userLanguage}) {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>({hsrhelperName})</p>
+						<p>{hsrhelperName}</p>
 					</div>
 				</a>
 				<a
@@ -71,7 +71,7 @@ export default function InstructionsComponent({userLanguage}) {
 							width={"20px"}
 							height={"20px"}
 						/> */}
-						<p>({hertaTerminalName})</p>
+						<p>{hertaTerminalName}</p>
 					</div>
 				</a>
 			</div>
@@ -116,3 +116,5 @@ InstructionsComponent.getInitialProps = async ({ req }) => {
 
 	return { userLanguage };
   };
+
+  export default InstructionsComponent;
