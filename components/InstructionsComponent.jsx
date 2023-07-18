@@ -102,7 +102,7 @@ function InstructionsComponent({userLanguage}) {
 						</a>
 					</div>
 				</div>
-				Copyright © 2022-2023 Pizza Studio
+				Copyright © 2022-2023 Pizza Studio {lang}
 			</div>
 		</div>
 	);
