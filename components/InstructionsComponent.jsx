@@ -1,9 +1,15 @@
 import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
-export default function InstructionsComponent() {
+import getConfig from "next/config";
+
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
+const defaultLanguage = publicRuntimeConfig.defaultLanguage;
+
+export default function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
-	var lang = window.navigator.language || window.navigator.userLanguage;
-	lang = lang.substr(0, 2);
+	// var lang = window.navigator.language || window.navigator.userLanguage;
+	// lang = lang.substr(0, 2);
+	var lang = userLanguage;
 	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
@@ -99,3 +105,12 @@ export default function InstructionsComponent() {
 		</div>
 	);
 }
+
+InstructionsComponent.getInitialProps = async ({ req }) => {
+	// 获取用户浏览器的语言
+	const userLanguage = req
+	  ? req.headers['accept-language'] || defaultLanguage
+	  : window.navigator.language || defaultLanguage;
+
+	return { userLanguage };
+  };
