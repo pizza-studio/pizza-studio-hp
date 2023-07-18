@@ -2,7 +2,7 @@ import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
 export default function InstructionsComponent() {
 	const router = useRouter();
-	var lang = navigator.language || navigator.userLanguage;
+	var lang = window.navigator.language || window.navigator.userLanguage;
 	lang = lang.substr(0, 2);
 	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
 	var ophelperName = "Pizza Helper for Genshin";
