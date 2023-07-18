@@ -6,11 +6,10 @@ export default function InstructionsComponent() {
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					create<span>-web3-dapp</span>
+					Pizza<span>Studio</span>
 				</h1>
 				<p>
-					Get started by editing this page in{" "}
-					<span>/pages/index.js</span>
+					Developers for Otaku games{" "}
 				</p>
 			</header>
 
@@ -21,7 +20,7 @@ export default function InstructionsComponent() {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Add Components</p>
+						<p>Pizza Helper for Genshin</p>
 					</div>
 				</a>
 				<a
@@ -30,7 +29,7 @@ export default function InstructionsComponent() {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Explore Templates</p>
+						<p>Pizza Helper for HSR</p>
 					</div>
 				</a>
 				<a
@@ -43,7 +42,7 @@ export default function InstructionsComponent() {
 							width={"20px"}
 							height={"20px"}
 						/>
-						<p>Visit Docs</p>
+						<p>Herta Terminal</p>
 					</div>
 				</a>
 			</div>
@@ -59,15 +58,15 @@ export default function InstructionsComponent() {
 				<div className={styles.icons_container}>
 					<div>
 						<a
-							href="https://github.com/alchemyplatform/create-web3-dapp"
+							href="https://github.com/pizza-studio"
 							target={"_blank"}
 						>
-							Leave a star on Github
+							Follow us on Github
 						</a>
 					</div>
 					<div>
 						<a
-							href="https://twitter.com/AlchemyPlatform"
+							href="https://twitter.com/@Haku_Bill"
 							target={"_blank"}
 						>
 							Follow us on Twitter
