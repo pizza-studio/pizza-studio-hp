@@ -9,7 +9,9 @@ export default function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
 	var lang = userLanguage;
-	lang = lang.substr(0, 2);
+	if (lang) {
+		lang = lang.substr(0, 2);
+	}
 	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
