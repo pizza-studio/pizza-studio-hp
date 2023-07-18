@@ -8,7 +8,7 @@ const defaultLanguage = publicRuntimeConfig.defaultLanguage;
 function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
-	var lang = userLanguage;
+	var lang = router.locale || userLanguage;
 	if (lang) {
 		lang = lang.substr(0, 2);
 	}
