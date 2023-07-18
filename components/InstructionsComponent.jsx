@@ -2,6 +2,27 @@ import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
 export default function InstructionsComponent() {
 	const router = useRouter();
+	var lang = navigator.language || navigator.userLanguage;
+	lang = lang.substr(0, 2);
+	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
+	var ophelperName = "Pizza Helper for Genshin";
+	var hsrhelperName = "Pizza Helper for HSR";
+	var hertaTerminalName = "Herta Terminal";
+	switch (lang) {
+		case "zh":
+			studioIntro = "为披萨玩家开发更多更好的App";
+			ophelperName = "原神披萨小助手";
+			hsrhelperName = "星铁披萨小助手";
+			hertaTerminalName = "黑塔终端";
+			break;
+		case "ja":
+			studioIntro = "ピザ助手アプリの開発者たち";
+			ophelperName = "原神ピザ助手";
+			hsrhelperName = "崩スタピザ助手";
+			hertaTerminalName = "ヘルタ端末";
+			break;
+	}
+
 	return (
 		<div className={styles.container}>
 			<header className={styles.header_container}>
@@ -9,7 +30,7 @@ export default function InstructionsComponent() {
 					Pizza <span>Studio</span>
 				</h1>
 				<p>
-					Developers of Pizza Helpers & More Great Apps{" "}
+					( {studioIntro})
 				</p>
 			</header>
 
@@ -20,7 +41,7 @@ export default function InstructionsComponent() {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Pizza Helper for Genshin</p>
+						<p>({ophelperName})</p>
 					</div>
 				</a>
 				<a
@@ -29,7 +50,7 @@ export default function InstructionsComponent() {
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Pizza Helper for HSR</p>
+						<p>({hsrhelperName})</p>
 					</div>
 				</a>
 				<a
@@ -42,7 +63,7 @@ export default function InstructionsComponent() {
 							width={"20px"}
 							height={"20px"}
 						/> */}
-						<p>Herta Terminal</p>
+						<p>({hertaTerminalName})</p>
 					</div>
 				</a>
 			</div>
