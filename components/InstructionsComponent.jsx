@@ -3,13 +3,13 @@ import Router, { useRouter } from "next/router";
 import getConfig from "next/config";
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
-const defaultLanguage = publicRuntimeConfig.defaultLanguage;
+const defaultLanguage = 'en';
 
 export default function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
-	// lang = lang.substr(0, 2);
 	var lang = userLanguage;
+	lang = lang.substr(0, 2);
 	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
