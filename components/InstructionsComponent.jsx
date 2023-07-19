@@ -9,22 +9,28 @@ function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
 	// var lang = window.navigator.language || window.navigator.userLanguage;
 	var lang = router.locale || userLanguage;
-	var studioIntro = "Developers of Pizza Helpers & More Great Apps";
+	var studioIntro = "Tech Pizzas Save the World";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
+	var followGithub = "Follow us on Github";
+	var followTwitter = "Follow Bill Haku on Twitter";
 	switch (lang) {
 		case "zh":
-			studioIntro = "为披萨玩家开发更多更好的App";
+			studioIntro = "技术披萨拯救世界";
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
 			hertaTerminalName = "黑塔终端";
+			followGithub = "关注我们的Github";
+			followTwitter = "关注Bill Haku的Twitter";
 			break;
 		case "ja":
-			studioIntro = "ピザ助手アプリの開発者たち";
+			studioIntro = "TECH PIZZAS SAVE THE WORLD";
 			ophelperName = "原神ピザ助手";
 			hsrhelperName = "崩スタピザ助手";
 			hertaTerminalName = "ヘルタ端末";
+			followGithub = "Githubでフォローする";
+			followTwitter = "TwitterでBill Hakuをフォローする";
 			break;
 	}
 
@@ -87,7 +93,7 @@ function InstructionsComponent({userLanguage}) {
 							href="https://github.com/pizza-studio"
 							target={"_blank"}
 						>
-							Follow us on Github
+							{followGithub}
 						</a>
 					</div>
 					<div>
@@ -95,7 +101,7 @@ function InstructionsComponent({userLanguage}) {
 							href="https://twitter.com/@Haku_Bill"
 							target={"_blank"}
 						>
-							Follow us on Twitter
+							{followTwitter}
 						</a>
 					</div>
 				</div>
