@@ -11,7 +11,8 @@ class MyApp extends App {
     return (
       <>
         <head>
-          <title>Pizza Helper Official Website</title>
+          <title>Pizza Studio</title>
+          <meta name="description" content="Pizza Studio Official Website"></meta>
         </head>
           <MainLayout>
             <Component {...pageProps} />
