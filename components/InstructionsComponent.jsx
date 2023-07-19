@@ -2,13 +2,9 @@ import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
 import getConfig from "next/config";
 
-const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
-const defaultLanguage = publicRuntimeConfig.defaultLanguage;
-
 function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
-	// var lang = window.navigator.language || window.navigator.userLanguage;
-	var lang = router.locale || userLanguage;
+	var lang = router.locale;
 	var studioIntro = "Tech Pizzas Save the World";
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
@@ -127,13 +123,13 @@ function InstructionsComponent({userLanguage}) {
 	);
 }
 
-InstructionsComponent.getInitialProps = async ({ req }) => {
-	// 获取用户浏览器的语言
-	const userLanguage = req
-	  ? req.headers['accept-language'] || defaultLanguage
-	  : window.navigator.language || defaultLanguage;
+// InstructionsComponent.getInitialProps = async ({ req }) => {
+// 	// 获取用户浏览器的语言
+// 	const userLanguage = req
+// 	  ? req.headers['accept-language'] || defaultLanguage
+// 	  : window.navigator.language || defaultLanguage;
 
-	return { userLanguage };
-  };
+// 	return { userLanguage };
+//   };
 
   export default InstructionsComponent;
