@@ -8,6 +8,23 @@
 	padding: 2rem 4rem 0.8rem 4rem;
 	gap: 2rem;
 	margin-bottom: 4rem;
+	color: rgb(143, 10, 238);
+	font-family: 'Rubik';
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		/* width: 100%; */
+		gap: 2rem;
+		margin-bottom: 2rem;
+		color: rgb(143, 10, 238);
+		font-family: 'Rubik';
+		font-weight: bold;
+	}
 }
 
 

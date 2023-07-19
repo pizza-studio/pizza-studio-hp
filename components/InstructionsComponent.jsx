@@ -1,6 +1,5 @@
 import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
-import getConfig from "next/config";
 
 function InstructionsComponent({userLanguage}) {
 	const router = useRouter();
@@ -117,19 +116,12 @@ function InstructionsComponent({userLanguage}) {
 						</a>
 					</div>
 				</div>
-				Copyright © 2022-2023 Pizza Studio
+			</div>
+			<div className={styles.copyright}>
+				<p>Copyright © 2022-2023 Pizza Studio</p>
 			</div>
 		</div>
 	);
 }
 
-// InstructionsComponent.getInitialProps = async ({ req }) => {
-// 	// 获取用户浏览器的语言
-// 	const userLanguage = req
-// 	  ? req.headers['accept-language'] || defaultLanguage
-// 	  : window.navigator.language || defaultLanguage;
-
-// 	return { userLanguage };
-//   };
-
-  export default InstructionsComponent;
+export default InstructionsComponent;
