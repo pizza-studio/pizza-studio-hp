@@ -13,7 +13,7 @@ function InstructionsComponent({userLanguage}) {
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
-	var hsrdictName = "HSR Dictionary";
+	var hsrdictName = "Honkai: Star Rail Dictionary";
 	var followGithub = "Follow us on Github";
 	var followTwitter = "Follow Bill Haku on Twitter";
 	switch (lang) {
@@ -22,7 +22,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
 			hertaTerminalName = "黑塔终端";
-			hsrdictName = "星铁词典";
+			hsrdictName = "星穹铁道词典";
 			followGithub = "关注我们的Github";
 			followTwitter = "关注Bill Haku的Twitter";
 			break;
@@ -31,7 +31,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神ピザ助手";
 			hsrhelperName = "崩スタピザ助手";
 			hertaTerminalName = "ヘルタ端末";
-			hsrdictName = "崩スタ辞書";
+			hsrdictName = "崩壊：スターレイル辞書";
 			followGithub = "Githubでフォローする";
 			followTwitter = "TwitterでBill Hakuをフォローする";
 			break;
