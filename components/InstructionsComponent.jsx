@@ -13,6 +13,7 @@ function InstructionsComponent({userLanguage}) {
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
+	var hsrdictName = "HSR Dictionary";
 	var followGithub = "Follow us on Github";
 	var followTwitter = "Follow Bill Haku on Twitter";
 	switch (lang) {
@@ -21,6 +22,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
 			hertaTerminalName = "黑塔终端";
+			hsrdictName = "星铁词典";
 			followGithub = "关注我们的Github";
 			followTwitter = "关注Bill Haku的Twitter";
 			break;
@@ -29,6 +31,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神ピザ助手";
 			hsrhelperName = "崩スタピザ助手";
 			hertaTerminalName = "ヘルタ端末";
+			hsrdictName = "崩スタ辞書";
 			followGithub = "Githubでフォローする";
 			followTwitter = "TwitterでBill Hakuをフォローする";
 			break;
@@ -48,7 +51,7 @@ function InstructionsComponent({userLanguage}) {
 			<div className={styles.buttons_container}>
 				<a
 					target={"_blank"}
-					href={"https://gi.pizzastudio.org"}
+					href={"https://apps.apple.com/app/id1635319193"}
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
@@ -57,7 +60,7 @@ function InstructionsComponent({userLanguage}) {
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://hsr.pizzastudio.org"}
+					href={"https://apps.apple.com/app/id6448894222"}
 				>
 					<div className={styles.button}>
 						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
@@ -66,7 +69,7 @@ function InstructionsComponent({userLanguage}) {
 				</a>
 				<a
 					target={"_blank"}
-					href={"https://herta.pizzastudio.org"}
+					href={"https://apps.apple.com/app/id6450712191"}
 				>
 					<div className={styles.button}>
 						{/* <img
@@ -75,6 +78,19 @@ function InstructionsComponent({userLanguage}) {
 							height={"20px"}
 						/> */}
 						<p>{hertaTerminalName}</p>
+					</div>
+				</a>
+				<a
+					target={"_blank"}
+					href={"https://hsrdict.pizzastudio.org"}
+				>
+					<div className={styles.button}>
+						{/* <img
+							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
+							width={"20px"}
+							height={"20px"}
+						/> */}
+						<p>{hsrdictName}</p>
 					</div>
 				</a>
 			</div>
