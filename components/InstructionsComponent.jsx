@@ -8,6 +8,7 @@ function InstructionsComponent({userLanguage}) {
 	var ophelperName = "Pizza Helper for Genshin";
 	var hsrhelperName = "Pizza Helper for HSR";
 	var hertaTerminalName = "Herta Terminal";
+	var bahelperName = "Pizza Helper for Blue Archive";
 	var hsrdictName = "Honkai: Star Rail Dictionary";
 	var followGithub = "Follow us on Github";
 	var followTwitter = "Follow Bill Haku on Twitter";
@@ -17,6 +18,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神披萨小助手";
 			hsrhelperName = "星铁披萨小助手";
 			hertaTerminalName = "黑塔终端";
+			bahelperName = "BA披萨小助手";
 			hsrdictName = "星穹铁道词典";
 			followGithub = "关注我们的Github";
 			followTwitter = "关注Bill Haku的Twitter";
@@ -26,6 +28,7 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神ピザ助手";
 			hsrhelperName = "崩スタピザ助手";
 			hertaTerminalName = "ヘルタ端末";
+			bahelperName = "ブルアカピザ助手";
 			hsrdictName = "崩壊：スターレイル辞書";
 			followGithub = "Githubでフォローする";
 			followTwitter = "TwitterでBill Hakuをフォローする";
@@ -86,6 +89,19 @@ function InstructionsComponent({userLanguage}) {
 							height={"20px"}
 						/> */}
 						<p>{hsrdictName}</p>
+					</div>
+				</a>
+				<a
+					target={"_blank"}
+					href={"https://download.pizzastudio.org/ba"}
+				>
+					<div className={styles.button}>
+						{/* <img
+							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
+							width={"20px"}
+							height={"20px"}
+						/> */}
+						<p>{bahelperName}</p>
 					</div>
 				</a>
 			</div>
