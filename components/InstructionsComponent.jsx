@@ -12,6 +12,8 @@ function InstructionsComponent({userLanguage}) {
 	var hsrdictName = "Honkai: Star Rail Dictionary";
 	var followGithub = "Follow us on Github";
 	var followTwitter = "Follow Bill Haku on Twitter";
+	var twitterURL = "https://twitter.com/@Haku_Bill";
+	var contactInMail = "Email";
 	switch (lang) {
 		case "zh":
 			studioIntro = "技术披萨拯救世界";
@@ -28,10 +30,12 @@ function InstructionsComponent({userLanguage}) {
 			ophelperName = "原神ピザ助手";
 			hsrhelperName = "崩スタピザ助手";
 			hertaTerminalName = "ヘルタ端末";
-			bahelperName = "ブルアカピザ助手";
+			bahelperName = "ブルアカピザ助手（開発中）";
 			hsrdictName = "崩壊：スターレイル辞書";
 			followGithub = "Githubでフォローする";
-			followTwitter = "TwitterでBill Hakuをフォローする";
+			followTwitter = "TwitterでPizza Studio公式をフォローする";
+			twitterURL = "https://twitter.com/@PizzaStudio_jp";
+			contactInMail = "メール";
 			break;
 	}
 
@@ -125,10 +129,18 @@ function InstructionsComponent({userLanguage}) {
 					</div>
 					<div>
 						<a
-							href="https://twitter.com/@Haku_Bill"
+							href={twitterURL}
 							target={"_blank"}
 						>
 							{followTwitter}
+						</a>
+					</div>
+					<div>
+						<a
+							href="mailto:contact@pizzastudio.org"
+							target={"_blank"}
+						>
+							{contactInMail}
 						</a>
 					</div>
 				</div>
