@@ -146,7 +146,7 @@ function InstructionsComponent({userLanguage}) {
 				</div>
 			</div>
 			<div className={styles.copyright}>
-				<p>Copyright © 2022-2023 Pizza Studio</p>
+				<p>Copyright © 2022-2025 Pizza Studio</p>
 			</div>
 		</div>
 	);
